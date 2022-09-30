@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <p>Já me livrei da maldição!!!</p>
+    <script>
+        /*
+        var n1 = window.prompt('Digite um número: ')
+        var n2 = window.prompt('Digite outro número: ')
+        var s = n1 + n2
+        window.alert('A soma dos valores é ' + s) //concatenação */
+        // + utilizado para adição . A adição para ser adição precisa que as váriaveis sejam number.
+        // + utilizado para concatenação. A adição para ser concatenação precisa que as variáveis sejam string.
+
+          // NumerparseInt ou apenas parseInt = converter para inteiro
+        // NumberparseFloat ou apenas parseFloat = converter para real, decimal
+       /* var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert('A soma dos calores é ' + s) */
+
+       /* var n1 = Number.parseFloat(window.prompt('Digite um número: '))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert('A soma dos calores é ' + s) */
+
+        // Pode utulizar apenas o Number no javascript, ele se vira para converter em float oi inteiro.
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+       // window.alert('A soma dos calores é ' + s)
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+
+
+        /* converter número para string
+         String(n)
+         ou n.toString()
+        */
+
+
+        /* formatando strings
+
+        `Eu estou aprendendo ${s}` // usa template string
+        
+         nome = 'Iarlei'
+         idade = 43
+         nota = 5.5
+         `O aluno ${nome} com ${idade} anos tirou a nota ${nota}`
+        */
+  
+
+          /* 
+          s.length diz quantas letras tem uma string
+          s.toUpperCase() joga toda string para letras maiúsculas
+          s.toLowerCase() joga toda string para letras minúsculas
+          */
+    </script>
+</body>
+</html>

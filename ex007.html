@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Verificar velocidade <input type="text" id="txtvel">
+   <button id="btnverificar" onclick="verificar()">Verificar</button>
+   <div id="res">Resultado</div>
+<script>
+    function verificar(){
+        var txtvel = document.getElementById('txtvel')
+        var res = document.querySelector('div#res')
+        txtvel = Number(txtvel.value)
+        res.innerText = `À sua velocidade é ${txtvel}`
+        if (txtvel > 60){
+         res.innerHTML = `Você ultrapassou a velocidade de <strong> ${txtvel} </strong> e foi <strong>Multado!</strong> `
+        }
+    }
+</script>
+</body>
+</html>

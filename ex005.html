@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div#area {
+        background: green;
+        width: 200px;
+        height: 200px;
+        font: normal 14pt Arial;
+        line-height: 200px;
+        text-align: center;
+        color: white;
+    }
+</style>
+
+<body>
+    <!--
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja ...
+    </div>
+    -->
+   <!-- <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">-->
+    <div id="area">
+    Interaja ...
+    </div>
+<script> /*
+    function clicar() {
+        var area = window.document.getElementById('area')
+        area.innerText = 'Clicou!!!'
+        area.style.color = 'cyan'
+        area.style.background = 'pink'
+    }
+    function entrar() {
+        var area = window.document.getElementById('area')
+        area.innerText = 'Entrou!'
+        area.style.color = 'brown'
+        area.style.background = 'red'
+    }
+    function sair() {
+        var area = window.document.getElementById('area')
+        area.innerText = 'Saiu!!!!'
+        area.style.color = 'black'
+        area.style.background = 'yellow'
+    }
+     */
+     var area = window.document.getElementById('area')
+     area.addEventListener('click', clicar)
+     area.addEventListener('mouseenter', entrar)
+     area.addEventListener('mouseout', sair)
+     // addEventListener faz a ligação com o html ao inves do onclick no html
+     function clicar() {
+       
+        area.innerText = 'Clicou!!!'
+        area.style.color = 'cyan'
+        area.style.background = 'pink'
+    }
+    function entrar() {
+      
+        area.innerText = 'Entrou!'
+        area.style.color = 'brown'
+        area.style.background = 'red'
+    }
+    function sair() {
+     
+        area.innerText = 'Saiu!!!!'
+        area.style.color = 'black'
+        area.style.background = 'yellow'
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: blue;
+        color: white;
+        font: normal 12pt Arial;
+    }
+</style>
+
+<body>
+<h1>Iniciando estudos DOM</h1>    
+<p>Aqui vai o resultado</p> <!--[0] primeiro parágrado-->
+<p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p> <!--[1] segundo parágrafo-->
+<div>Clique em mim</div>
+<script>
+  //  window.document.write('Olá mundo!')
+  //  window.document.write(window.document.charset)
+  //  window.document.write(window.navigator.appName)
+   //  window.document.write(window.document.URL)
+   
+
+  /* var p1 = window.document.getElementsByTagName('p')[0] // porque tem duas tag p e começa com zero para usar a primeira tag, depois 1e assim vai */
+//  window.document.write(p1.innerText) 
+ var p1 = window.document.getElementsByTagName('p')[1] // porque tem duas tag p e começa com zero para usar a primeira tag, depois 1e assim vai */
+  window.document.write(p1.innerText) // pega o texto
+  window.document.write(p1.innerHTML) // pega o texto todo em html
+  p1.style.color = 'black' // alterando a cor da fonte da tag p
+  var corpo = window.document.body // variavel para alterar a cor do body
+  corpo.style.background = 'cyan' // alternado a cor do body
+
+
+  
+</script>
+</body>
+</html>
