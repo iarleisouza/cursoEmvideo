@@ -30,7 +30,7 @@ let num = document.querySelector('input#fnum')
     }else{
       window.alert('Va,lor inválido ou já encontrado na lista.')
     }
-    num.valoue = ''
+    num.value = ''
     num.focus()
   
   }
@@ -51,7 +51,7 @@ let num = document.querySelector('input#fnum')
         }
         if (valores[pos] < menor) {
           menor = valores[pos]
-        }
+    }
       }
       media = soma / tot
       res.innerHTML = ''
