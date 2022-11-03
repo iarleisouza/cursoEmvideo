@@ -1,7 +1,7 @@
 <!--valor é adicionar na caixa
 e no array da memória do navegdor
 
-numero repedito é inválido ou consta na lista
+numero repetido é inválido ou consta na lista
 caixa vazia erro
 
 aop clicar em finalizar aparece quantos números adicionados
@@ -29,20 +29,24 @@ a média dos valores digitados
     <section>
         <div>
             <p>Numero (entre 1 a 100):
-            <input type="number" name="txtn" id="txtn" min="0">
+            <input type="number" name="txtn" id="fnum" min="0">
        
-            <input type="button" value="Adicionar" onclick="Adicionar()">
+            <input type="button" value="Adicionar" onclick="adicionar()">
         </p>
         </div>
-     <!--  <div id="res">
-            Digite um número acima
-        </div> --> 
-        <select name="list" id="listNumber" size="10">
+      
+        <select name="list" id="flista" size="10">
             <option value="">Digite um número acima!</option>
+
         </select>
       <br>
-      <input type="button" value="Finalizar" onclick="Finalizar()">
+      <input type="button" value="Finalizar" onclick="finalizar()">
+      <br>
+      <div id="res">
+      
+    </div> 
     </section>
+   
     <footer>
     <p>&copy;CursoemVideo</p>
 </footer>
